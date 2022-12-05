@@ -9,12 +9,12 @@
 **Answer:** <br><br>
 We decided to work together throghout the implementation of project in GCP.
 
--Rushabh Sheta
+-**Rushabh Sheta** <br><br>
 Built the kernel, understood steps to be performed, Researched about cpuid instruction and cpu leaf node,forked the torvalds/linux repo, understood where to do necessary chnages in files, create vmx.c file, create the test file and update the documentation.
 
 
 
--Harsh Vaghasiya
+-**Harsh Vaghasiya** <br><br>
 Built the kernel, Installed required kernel modules in the VM,learnt about atomic variables, Included the discussed changes in the cpuid.c file, compile the test file and create the documentation.
 
 
