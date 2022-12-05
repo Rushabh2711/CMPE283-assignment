@@ -7,6 +7,17 @@
 ## Questions and Answers:
 1) For each member in your team, provide 1 paragraph detailing what parts of the lab that member implemented / researched. (You may skip this question if you are doing the lab by yourself). <br><br>
 **Answer:** <br><br>
+We decided to work together throghout the implementation of project in GCP.
+
+-Rushabh Sheta
+Built the kernel, understood steps to be performed, Researched about cpuid instruction and cpu leaf node,forked the torvalds/linux repo, understood where to do necessary chnages in files, create vmx.c file, create the test file and update the documentation.
+
+
+
+-Harsh Vaghasiya
+Built the kernel, Installed required kernel modules in the VM,learnt about atomic variables, Included the discussed changes in the cpuid.c file, compile the test file and create the documentation.
+
+
 ----------------------
 2) Describe in detail the steps you used to complete the assignment. Consider your reader to be someone skilled in software development but otherwise unfamiliar with the assignment. Good answers to this question will be recipes that someone can follow to reproduce your development steps. <br>
 **Note:** I may decide to follow these instructions for random assignments, so you should make sure they are accurate. <br><br>
@@ -24,7 +35,7 @@
 **Step-4: Install Git. And Clone the kernel repository. Verify the contents of Linux Folder.** <br><br>
 >*sudo apt-get install git*<br>
 >*git --version*<br>
->*git clone https://github.com/harshv72/linux.git*<br>
+>*git clone https://github.com/Rushabh2711/linux.git*<br>
 >*cd linux*<br>
 >*ls*<br>
 >*git status*<br>
