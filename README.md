@@ -5,17 +5,15 @@
 2) Rushbha Sheta - 016038646
 
 ## Questions and Answers:
+----------------------
 1) For each member in your team, provide 1 paragraph detailing what parts of the lab that member implemented / researched. (You may skip this question if you are doing the lab by yourself). <br><br>
 **Answer:** <br><br>
 We decided to work together throghout the implementation of project in GCP.
 
--**Rushabh Sheta** <br><br>
-Built the kernel, understood steps to be performed, Researched about cpuid instruction and cpu leaf node,forked the torvalds/linux repo, understood where to do necessary chnages in files, create vmx.c file, create the test file and update the documentation.
+- **Rushabh Sheta:** Built the kernel, understood steps to be performed, Researched about cpuid instruction and cpu leaf node,forked the torvalds/linux repo, understood where to do necessary chnages in files, create vmx.c file, create the test file and update the documentation.<br><br>
 
 
-
--**Harsh Vaghasiya** <br><br>
-Built the kernel, Installed required kernel modules in the VM,learnt about atomic variables, Included the discussed changes in the cpuid.c file, compile the test file and create the documentation.
+- **Harsh Vaghasiya:** Built the kernel, Installed required kernel modules in the VM,learnt about atomic variables, Included the discussed changes in the cpuid.c file, compile the test file and create the documentation.<br><br>
 
 
 ----------------------
