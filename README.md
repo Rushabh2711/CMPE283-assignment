@@ -20,7 +20,7 @@ We decided to work together throghout the implementation of project in GCP.
 2) Describe in detail the steps you used to complete the assignment. Consider your reader to be someone skilled in software development but otherwise unfamiliar with the assignment. Good answers to this question will be recipes that someone can follow to reproduce your development steps. <br>
 **Note:** I may decide to follow these instructions for random assignments, so you should make sure they are accurate. <br><br>
 **Answer:**<br><br>
-(check out [CMPE283-assignment-2 SCREENSHOTS](SCREENSHOTS/) for more)<br><br>
+**IMPORTANT NOTE: We have not included all screenshots in this README file. Please, check out [CMPE283-assignment-2 SCREENSHOTS](SCREENSHOTS/) for more detailed understanding of flow and procedure)**<br><br>
 **Step-1: Created project in GCP.** <br><br>
 
 ![2](https://user-images.githubusercontent.com/28814244/205827798-3c76b025-11a4-4c98-8560-996bbdaf30e4.png)
