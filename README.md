@@ -164,9 +164,6 @@ We decided to work together throghout the implementation of project in GCP.
 ## Output
 **Step-14: Create, compile and run the test file.**<br><br>
 >*gedit test.c*<br>
-
-![47a](https://user-images.githubusercontent.com/52853300/205834279-0db12ca1-38db-4380-a2bf-7c3f21ce9313.png)
-
 >*gcc test.c*<br>
 >*./a.out*<br>
 
