@@ -87,12 +87,20 @@ We decided to work together throghout the implementation of project in GCP.
 
 **Step-8: cpuid.c file is located at : "/linux/arch/x86/kvm/" folder. And vmx.c file is located at:  "/linux/arch/x86/kvm/vmx/" folder. Make changes to these files as shown below""**<br><br>
 - Changes for cpuid.c file:
+![21](https://user-images.githubusercontent.com/52853300/205831989-4e43011f-1f93-4c08-ad37-cad23ff8862c.png)
+
+![22](https://user-images.githubusercontent.com/52853300/205832081-4921c78a-3279-4174-b6ee-822e2402ab87.png)
 
 - Changes for vmx.c file:
+![23](https://user-images.githubusercontent.com/52853300/205832194-093a26d4-4503-409c-b7bc-b7804dd63c85.png)
+
+![24](https://user-images.githubusercontent.com/52853300/205832228-d5786ff2-0356-4f41-8c30-718624c22600.png)
 
 **Step-8: Run following command to build the kernel again for the second time.**<br><br>
 >*make -j 8 modules && make -j 8 && sudo make modules_install && sudo make install*<br>
 
+![25](https://user-images.githubusercontent.com/52853300/205832362-3d494f30-a648-452b-9a42-dd44ec33f2a9.png)
+----------------------
 ## Testing:
 
 **Step-9: To install some basic GUI functionailities on our VM for inner-vm interaction, run following commands:**<br><br>
@@ -102,6 +110,9 @@ We decided to work together throghout the implementation of project in GCP.
 >*sudo apt install --assume-yes wget tasksel*<br>
 >*wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb*<br>
 >*sudo apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb*<br>
+
+![27](https://user-images.githubusercontent.com/52853300/205833185-3ad0fd09-7cfe-4891-a59b-88fe492d34d6.png)
+
 >*sudo tasksel install ubuntu-desktop*<br>
 >*sudo bash -c ‘echo “exec /etc/X11/Xsession /usr/bin/gnome-session” > /etc/chrome-remote-desktop-session’*<br>
 >*sudo apt-get install xbase-clients*<br>
@@ -109,16 +120,25 @@ We decided to work together throghout the implementation of project in GCP.
 **Step-10: Run  following commands.**<br><br>
 >*sudo systemctl status chrome-remote-desktop@$USER*<br>
 >*sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils*<br>
+
+![30](https://user-images.githubusercontent.com/52853300/205833391-3e528d77-aabf-4dde-9492-56ceeb12292b.png)
+
 >*sudo lsmod | grep kvm*<br>
 >*sudo rmmod kvm_intel*<br>
 >*sudo rmmod kvm*<br>
 >*sudo modprobe kvm*<br>
 >*sudo modprobe kvm_intel*<br>
 >*sudo lsmod | grep kvm*<br>
+
+![31](https://user-images.githubusercontent.com/52853300/205833526-f8bab866-f648-4741-b053-4e3f958341bb.png)
+
 >*sudo adduser 'harshhimmatbhai_vaghasiya' libvirt*<br>
 >*sudo getent group | grep libvirt*<br>
 >*sudo adduser 'harshhimmatbhai_vaghasiya' kvm*<br>
 >*sudo getent group | grep kvm*<br>
+
+![32](https://user-images.githubusercontent.com/52853300/205833634-4fe8963d-cfe5-4b64-b59b-7311f21d678e.png)
+
 >*sudo virsh list --all*<br>
 >*sudo systemctl status libvirtd*<br>
 >*sudo systemctl enable --now libvirtd*<br>
@@ -131,13 +151,34 @@ We decided to work together throghout the implementation of project in GCP.
 
 **Step-12: Install Ubuntu in remote desktop.**<br><br>
 
+![40](https://user-images.githubusercontent.com/52853300/205833866-12937872-72d6-4bd1-a9c8-ea6b2cc22107.png)
+
+![41](https://user-images.githubusercontent.com/52853300/205834195-c3f9998a-18cc-4429-ab42-71f8c9806da7.png)
+
 **Step-13: Update package installer. Install build-essential and cpuid package.**<br><br>
 >*sudo apt-get update*<br>
 >*sudo apt-get install*<br>
 >*sudo apt-get install build-essential*<br>
 >*sudo apt-get install -y cpuid*<br>
-
+----------------------
+## Output
 **Step-14: Create, compile and run the test file.**<br><br>
 >*gedit test.c*<br>
+
+![47a](https://user-images.githubusercontent.com/52853300/205834279-0db12ca1-38db-4380-a2bf-7c3f21ce9313.png)
+
 >*gcc test.c*<br>
 >*./a.out*<br>
+
+![47](https://user-images.githubusercontent.com/52853300/205834377-95aaae09-6e83-40b4-95a2-0b300ff47b89.png)
+
+>*cpuid -l 0x4ffffffc*<br>
+>*cpuid -l 0x4ffffffd*<br>
+
+![46](https://user-images.githubusercontent.com/52853300/205834690-d14968d2-53cf-4474-a552-327d5a22477a.png)
+
+>*sudo dmesg | tail*<br>
+
+![48](https://user-images.githubusercontent.com/52853300/205834670-36e9e1e6-12f3-4070-b9c4-736d4a32b5f0.png)
+
+
